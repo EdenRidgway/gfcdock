@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Release/GFCDock.dll" internal="true" />
+  </import>
+  <widget class="Gtk.Bin" id="GFCDock.DockPanel" design-size="377 342">
+    <property name="MemberName" />
+    <child>
+      <widget class="Gtk.VBox" id="vbox">
+        <property name="MemberName" />
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <widget class="Gtk.HBox" id="hbox">
+            <property name="MemberName" />
+            <child>
+              <placeholder />
+            </child>
+            <child>
+              <placeholder />
+            </child>
+            <child>
+              <placeholder />
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder />
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="GFCDock.DockPane" design-size="300 300">
+    <property name="MemberName" />
+    <property name="GeneratePublic">False</property>
+    <child>
+      <widget class="Gtk.VBox" id="vbox">
+        <property name="MemberName" />
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <placeholder />
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="GFCDock.DockCaption" design-size="300 300">
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <property name="CanFocus">True</property>
+    <property name="GeneratePublic">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox">
+        <property name="MemberName" />
+        <property name="Events">PointerMotionMask, ButtonPressMask, ButtonReleaseMask, EnterNotifyMask, LeaveNotifyMask</property>
+        <property name="VisibleWindow">False</property>
+        <signal name="ButtonPressEvent" handler="EventBox_ButtonPressEvent" />
+        <signal name="ButtonReleaseEvent" handler="EventBox_ButtonReleaseEvent" />
+        <signal name="EnterNotifyEvent" handler="EventBox_EnterNotifyEvent" />
+        <signal name="LeaveNotifyEvent" handler="EventBox_LeaveNotifyEvent" />
+        <signal name="MotionNotifyEvent" handler="EventBox_MotionNotifyEvent" />
+        <child>
+          <placeholder />
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="GFCDock.DockDragWindow" design-size="500 438">
+    <property name="MemberName" />
+    <property name="Sensitive">False</property>
+    <property name="Title" translatable="yes">DockDragWindow</property>
+    <property name="TypeHint">Splashscreen</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <property name="AcceptFocus">False</property>
+    <property name="Decorated">False</property>
+    <property name="FocusOnMap">False</property>
+    <child>
+      <placeholder />
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="GFCDock.DockAutoHide" design-size="300 300">
+    <property name="MemberName" />
+    <property name="GeneratePublic">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox">
+        <property name="MemberName" />
+        <property name="Events">PointerMotionMask, EnterNotifyMask, LeaveNotifyMask</property>
+        <property name="AboveChild">True</property>
+        <property name="VisibleWindow">False</property>
+        <signal name="EnterNotifyEvent" handler="EventBox_EnterNotifyEvent" />
+        <signal name="LeaveNotifyEvent" handler="EventBox_LeaveNotifyEvent" />
+        <signal name="MotionNotifyEvent" handler="EventBox_MotionNotifyEvent" />
+        <child>
+          <widget class="Gtk.Fixed" id="fixedpanel">
+            <property name="MemberName" />
+            <property name="HasWindow">False</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="GFCDock.DockAutoHideWindow" design-size="400 300">
+    <property name="MemberName" />
+    <property name="CanFocus">True</property>
+    <property name="Events">PointerMotionMask, LeaveNotifyMask</property>
+    <property name="GeneratePublic">False</property>
+    <property name="Title" translatable="yes">DockAutoHideWindow</property>
+    <property name="TypeHint">Menu</property>
+    <property name="Modal">True</property>
+    <property name="BorderWidth">1</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <property name="Decorated">False</property>
+    <property name="DestroyWithParent">True</property>
+    <property name="SkipPagerHint">True</property>
+    <property name="SkipTaskbarHint">True</property>
+    <child>
+      <placeholder />
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="GFCDock.DockSizer" design-size="300 300">
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <property name="CanFocus">True</property>
+    <property name="GeneratePublic">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox">
+        <property name="MemberName" />
+        <property name="Visible">False</property>
+        <property name="CanFocus">True</property>
+        <property name="Events">Button1MotionMask, ButtonPressMask, ButtonReleaseMask, EnterNotifyMask, LeaveNotifyMask</property>
+        <property name="VisibleWindow">False</property>
+        <signal name="ButtonPressEvent" handler="EventBox_ButtonPressEvent" />
+        <signal name="ButtonReleaseEvent" handler="EventBox_ButtonReleaseEvent" />
+        <signal name="MotionNotifyEvent" handler="EventBox_MotionNotifyEvent" />
+        <signal name="EnterNotifyEvent" handler="EventBox_EnterNotifyEvent" />
+        <signal name="LeaveNotifyEvent" handler="EventBox_LeaveNotifyEvent" />
+        <child>
+          <placeholder />
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="GFCDock.DockPerspective" design-size="103 32">
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.HBox" id="hbox1">
+        <property name="MemberName" />
+        <property name="Spacing">5</property>
+        <child>
+          <widget class="Gtk.ComboBox" id="combobox">
+            <property name="MemberName" />
+            <property name="Sensitive">False</property>
+            <property name="Tooltip" translatable="yes">Current perspective</property>
+            <property name="IsTextCombo">False</property>
+            <property name="Items" translatable="yes" />
+            <signal name="Changed" handler="Combobox_Changed" />
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="buttonNew">
+            <property name="MemberName" />
+            <property name="Sensitive">False</property>
+            <property name="Tooltip" translatable="yes">Create a new perspective</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextAndIcon</property>
+            <property name="Icon">stock:gtk-add Menu</property>
+            <property name="Label" translatable="yes" />
+            <property name="Relief">None</property>
+            <signal name="Clicked" handler="ButtonNew_Clicked" />
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="buttonDelete">
+            <property name="MemberName" />
+            <property name="Sensitive">False</property>
+            <property name="Tooltip" translatable="yes">Delete current perspective</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextAndIcon</property>
+            <property name="Icon">stock:gtk-remove Menu</property>
+            <property name="Label" translatable="yes" />
+            <property name="Relief">None</property>
+            <signal name="Activated" handler="ButtonDelete_Clicked" />
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Dialog" id="GFCDock.DockNewPerspectiveDialog" design-size="400 117">
+    <property name="MemberName" />
+    <property name="GeneratePublic">False</property>
+    <property name="Title" translatable="yes">New Perspective...</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Modal">True</property>
+    <property name="Resizable">False</property>
+    <property name="AllowGrow">False</property>
+    <property name="Buttons">2</property>
+    <property name="HelpButton">False</property>
+    <child internal-child="VBox">
+      <widget class="Gtk.VBox" id="dialog1_VBox">
+        <property name="MemberName" />
+        <property name="BorderWidth">2</property>
+        <child>
+          <widget class="Gtk.HBox" id="hbox1">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <property name="BorderWidth">5</property>
+            <child>
+              <widget class="Gtk.Label" id="label">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Perspective name: </property>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entry">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">●</property>
+                <signal name="Changed" handler="Entry_Changed" />
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+    <child internal-child="ActionArea">
+      <widget class="Gtk.HButtonBox" id="dialog1_ActionArea">
+        <property name="MemberName" />
+        <property name="Spacing">10</property>
+        <property name="BorderWidth">5</property>
+        <property name="Size">2</property>
+        <property name="LayoutStyle">End</property>
+        <child>
+          <widget class="Gtk.Button" id="buttonCancel">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-cancel</property>
+            <property name="ResponseId">-6</property>
+            <property name="label">gtk-cancel</property>
+          </widget>
+          <packing>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="buttonOk">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-ok</property>
+            <property name="ResponseId">-5</property>
+            <property name="label">gtk-ok</property>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

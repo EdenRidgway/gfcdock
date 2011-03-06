@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F409FA7-E8A9-4243-8ACC-B0A90FEB002D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GFCDock</RootNamespace>
+    <ReleaseVersion>1.0</ReleaseVersion>
+    <AssemblyName>GFCDock</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="DockPanel.cs" />
+    <Compile Include="DockEnum.cs" />
+    <Compile Include="DockPanelException.cs" />
+    <Compile Include="DockPane.cs" />
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="gtk-gui\GFCDock.DockPanel.cs" />
+    <Compile Include="gtk-gui\GFCDock.DockPane.cs" />
+    <Compile Include="DockNotebook.cs" />
+    <Compile Include="IDockableWidget.cs" />
+    <Compile Include="DockCaption.cs" />
+    <Compile Include="gtk-gui\GFCDock.DockCaption.cs" />
+    <Compile Include="DockAutoHide.cs" />
+    <Compile Include="DockDragWindow.cs" />
+    <Compile Include="gtk-gui\GFCDock.DockDragWindow.cs" />
+    <Compile Include="gtk-gui\GFCDock.DockAutoHide.cs" />
+    <Compile Include="DockAutoHideWindow.cs" />
+    <Compile Include="gtk-gui\GFCDock.DockAutoHideWindow.cs" />
+    <Compile Include="DockSizer.cs" />
+    <Compile Include="gtk-gui\GFCDock.DockSizer.cs" />
+    <Compile Include="DockAutoHideContent.cs" />
+    <Compile Include="DockSerialization.cs" />
+    <Compile Include="DockPerspective.cs" />
+    <Compile Include="gtk-gui\GFCDock.DockPerspective.cs" />
+    <Compile Include="DockNewPerspectiveDialog.cs" />
+    <Compile Include="gtk-gui\GFCDock.DockNewPerspectiveDialog.cs" />
+    <Compile Include="DockDragStateEventArgs.cs" />
+    <Compile Include="DockDocumentMaximizedEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Mono.Cairo, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>glib-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
